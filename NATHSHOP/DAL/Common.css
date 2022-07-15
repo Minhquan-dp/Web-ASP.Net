@@ -1,0 +1,217 @@
+﻿
+/*-------------------------body---------------------------------*/
+* {
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.main {
+    width: 1200px;
+    margin: auto;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+/*--------------------------header--------------------------------*/
+.header {
+    width: 100%;
+    height: 30px;
+}
+
+.thanhdangtim {
+    height: 50px;
+    background-color: black;
+    width: 100%;
+}
+
+    .thanhdangtim ul li {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+        .thanhdangtim ul li ul li{
+            width: 94px;
+            list-style: none;
+            text-align: center;
+            float: right;
+            height: 23px;
+        }
+
+            .thanhdangtim ul li ul li a {
+                color: white;
+                text-decoration: none;
+                line-height: 15px;
+                display: block;
+                font-size:medium;
+            }
+
+.timkiem {
+    width: 100%;
+    height: 126px;
+}
+
+    .timkiem ul {
+        height: 105px;
+        width: 1160px;
+    }
+
+    .timkiem > ul > li {
+        padding-bottom: 100px;
+    }
+
+    .timkiem ul li {
+        list-style: none;
+        float: left;
+        width: 385px;
+        height: 24px;
+    }
+/*------------------------------menu----------------------*/
+.menu {
+    height: 35px;
+    background-color: white;
+    width: 100%;
+    border-top: 1px dotted gray;
+}
+
+    .menu ul {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .menu > ul > li {
+        float: left;
+    }
+
+        .menu > ul > li:hover ul {
+            display: block; /*hien len*/
+        }
+
+    .menu ul li {
+        background-color: white;
+        width: 235px;
+        list-style: none;
+        text-align: center;
+    }
+
+        .menu ul li ul {
+            position: absolute; /*static, relative, fixed*/
+            display: none; /*an di*/
+        }
+
+        .menu ul li a {
+            color: black;
+            text-decoration: none;
+            line-height: 35px;
+            display: block;
+            font-size: x-large;
+        }
+
+            .menu ul li a:hover {
+                background-color: white;
+                color: #e61b1b;
+            }
+
+
+/*--------------------GioiThieu-----------------------------*/
+.gioithieu {
+    font-size: large;
+    margin-right: 20px;
+    height: auto;
+    width: 1200px;
+    margin-right: 20px;
+    clear: both;
+}
+
+    .gioithieu ul li a {
+        text-decoration: none;
+    }
+
+.left {
+    width: 400px;
+    height: auto;
+    float: left;
+}
+
+.right {
+    width: 800px;
+    height: auto;
+    float: right;
+}
+/*----------------------DangNhap-DangKy------------------*/
+dangnhap {
+    margin: 0px;
+    padding: 0px;
+    background-color: mintcream;
+    font-size: x-large;
+    width: 600px;
+    height: auto;
+}
+
+.dangky {
+    margin: 0px;
+    padding: 0px;
+    background-color: mintcream;
+    font-size: large;
+    width: 600px;
+    height: auto;
+}
+/*--------------------footer----------------------------*/
+.footer {
+    background-color: aliceblue;
+    height: 235px;
+    width: 1200px;
+    border-top: 1px solid black;
+    margin-top: 15px;
+    clear: both;
+    font-size: large;
+}
+
+    .footer .thongtinlienhe {
+        width: 400px;
+        height: auto;
+        float: left;
+        margin-right: 10px;
+        color: #000000;
+    }
+
+.thongtinlienhe ul li {
+    list-style: none;
+}
+
+.footer .thongtinlienhe ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer .diachi {
+    float: left;
+    width: 500px;
+    height: auto;
+}
+
+.footer .lienket {
+    float: left;
+}
+
+.lienket1 {
+    float: left;
+}
+
+.lienket2 {
+    float: right;
+}
+
+.lienket3 {
+    text-align: center;
+}
+
+.lienket ul li {
+    list-style: none;
+}
+
+    .lienket ul li a {
+        text-decoration: none;
+        color: black;
+    }

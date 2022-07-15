@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#Slider {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 30px;
+    width: 800px;
+    background: white;
+    z-index:1;
+}
+
+#wrap-slider {
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+
+#slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slide-box {
+    width: 800px;
+    height: 500px;
+    display:block;
+    float: left;
+}
+
+

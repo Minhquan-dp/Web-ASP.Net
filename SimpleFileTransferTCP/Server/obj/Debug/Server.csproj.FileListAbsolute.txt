@@ -1,0 +1,13 @@
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Server\bin\Debug\Server.exe.config
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Server\bin\Debug\Server.exe
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Server\bin\Debug\Server.pdb
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Server\obj\Debug\Server.exe
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Server\obj\Debug\Server.pdb
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Server\bin\Debug\Server.exe.config
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Server\bin\Debug\Server.exe
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Server\bin\Debug\Server.pdb
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Server\obj\Debug\Server.exe
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Server\obj\Debug\Server.pdb

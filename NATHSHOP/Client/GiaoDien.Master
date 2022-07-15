@@ -1,0 +1,279 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GiaoDien.master.cs" Inherits="NATHSHOP.Client.GiaoDien" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="icon" type="image/x-icon" href="Images/iclogo.png" />
+    <title>Nath-Sneaker</title>
+    <style type="text/css">
+        .dnn {
+            background-color:black;
+            color: white;
+            text-decoration: none;
+            display: block;
+            list-style:none;
+            font-size: medium;
+            float: right;
+            text-align:center;
+            line-height:0px;
+        }
+    </style>
+    <script type="text/javascript">
+        function moveElement(elementID, final_x, final_y, interval) {
+            var elem = document.getElementById(elementID);
+            if (elem.movement) clearTimeout(elem.movement);
+            // Xác định vị trí
+            var xpos = parseInt(elem.style.left);
+            var ypos = parseInt(elem.style.top);
+            // Sau khi dịch chuyển tới vị trí thì dừng
+            if (xpos == final_x && ypos == final_y) return true;
+            // Tính vị trí dịch chuyển sau mỗi thời gian dừng
+            if (xpos < final_x) {
+                var dist = Math.ceil((final_x - xpos) / 10);
+                xpos = xpos + dist;
+            }
+            if (xpos > final_x) {
+                var dist = Math.ceil((xpos - final_x) / 10);
+                xpos = xpos - dist;
+            }
+            if (ypos < final_y) {
+                var dist = Math.ceil((final_y - ypos) / 10);
+                ypos = ypos + dist;
+            }
+            if (ypos > final_y) {
+                var dist = Math.ceil((ypos - fina_y) / 10);
+                ypos = ypos - dist;
+            }
+            // Di chuyển phần tử
+            elem.style.left = xpos + "px";
+            elem.style.top = ypos + "px";
+            // Gọi lại hàm dịch chuyển sau khi dịch được 1 px
+            var repeat = "moveElement('" + elementID + "'," + final_x + ", " + final_y + ", " + interval + ")";
+            elem.movement = setTimeout(repeat, interval);
+        }
+        function previous() {
+            if (move < 0) move += box_width;
+            moveElement('slider', move, 0, 10);
+        }
+        function next() {
+            move = (move <= endpos) ? 0 : (move - box_width);
+            moveElement('slider', move, 0, 10);
+        }
+        function slider() {
+            if (!document.getElementById) return false;
+            var slider = document.getElementById('slider');
+            var wrap_slider = document.getElementById('wrap-slider');
+
+            // Định kiểu cho slider nếu chưa được thiết lập
+            if (!slider.style.position) slider.style.position = "absolute";
+            if (!slider.style.left) slider.style.left = "0px";
+            if (!slider.style.top) slider.style.top = "0px";
+
+            // Thiết lập các thông số cho slider
+            var box_arr = slider.childNodes;
+            var box_quantity = 0;
+            for (var i = 0; i < box_arr.length; i++) {
+                if (box_arr[i].className == 'slide-box') {
+                    box_quantity++;
+                    box_width = box_arr[i].offsetWidth;
+                    box_height = box_arr[i].offsetHeight;
+                }
+            }
+
+            wrap_slider.style.height = box_height + "px";
+            wrap_slider.style.width = box_width + "px";
+            slider.style.width = (box_width * box_quantity) + "px";
+            move = 0; endpos = -(box_width * 3);
+
+            // Tự động chạy slider
+            var idSet = setInterval('next()', 2000);
+
+            // next_slide , prev_slide
+            var next_slide = document.getElementById("next-slide");
+            var prev_slide = document.getElementById("prev-slide");
+
+            next_slide.onclick = function () {
+                next(); clearInterval(idSet);
+                idSet = setInterval('next()', 2000);
+            }
+            prev_slide.onclick = function () {
+                previous(); clearInterval(idSet);
+                idSet = setInterval('next()', 2000);
+            }
+        }
+        window.onload = function () {
+            slider();
+        }// end onload
+
+    </script>
+    <link href="css/cart_shopping.css" rel="stylesheet" />
+    <link href="css/Common.css" rel="stylesheet" />
+    <link href="css/slide.css" rel="stylesheet" />
+    <script src="js/jquery.touchwipe.1.1.1.js"></script>
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/cart_shopping.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--shopping_cart--%>
+            <ul id="cart_shopping">
+                <li>
+                    <div id="main_cart">
+                        <div id="span_cart">
+                            <a title="Xem giỏ hàng" href="GioHang.aspx">
+                                <img src="Images/shoppingcart.png" /> </a>
+                        </div>
+                        <div id="view_cart">
+                            <asp:Label ID="lblSL" runat="server" Text="0"></asp:Label>
+                            &nbsp;:sanpham<br />
+                            <asp:Label ID="lblTongTien" runat="server" Text="0"></asp:Label>&nbsp;:VND
+                        <div style="clear: both">
+                        </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <%--end shopping_cart--%>
+        <div class="main">
+            <div class="header">
+                <div class="thanhdangtim">
+                    <ul>
+                        <li>
+                            <asp:Panel ID="pnlchuadangnhap" runat="server" Width="1196px">
+                                <ul>
+                                    <li><a href="DangKi.aspx">Đăng Ký</a></li>
+                                    <li style="color: #ffffff; font-size:x-large; line-height:50px;margin-top: 50px;">||</li>                                    
+                                    <li><a href="DangNhap.aspx">Đăng Nhập</a></li>
+                                </ul>
+                            </asp:Panel>
+                        </li>
+                        <li>
+                            <asp:Panel ID="pnldadangnhap" CssClass="dnn" runat="server" Visible="false">
+                                <ul>
+
+                                    
+                                    <li>
+                                        <a href="DoiMatKhau.aspx" style="text-align:center; width: 89px;">Đổi mật khẩu</a>
+                                    </li>
+                                    <li>   
+                                        <asp:LinkButton ID="hplLogout" runat="server" Text="Thoát" OnClick="hplLogout_Click" Width="80px" Height="16px"></asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:Label runat="server" ID="lblDangNhap" Width="96px" Height="16px"></asp:Label>
+                                    </li>
+                                </ul>
+                            </asp:Panel>
+                        </li>
+                    </ul>
+                </div>
+                <br />
+                <div class="timkiem">
+                    <ul>
+                        <li>
+                            <asp:TextBox runat="server" ID="txtTK" placeholder="Nhap Tim Kiem..." Height="24px" Width="196px"></asp:TextBox>
+                            <asp:Button runat="server" ID="btnTK" Text="Tìm Kiếm" OnClick="btnTK_Click"
+                                Height="24px" Width="99px" />
+                        </li>
+                        <li>
+                            <a href="Default.aspx">
+                                <img src="Images/logo.png" style="width: 386px" /></a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="Default.aspx">Trang Chủ</a>
+                        </li>
+                        <li>
+                            <a href="GioiThieu.aspx">Giới Thiệu</a>
+                        </li>
+                        <li>
+                            <a href="SanPham.aspx">Sản phẩm</a>
+                            <ul>
+                                <li>
+                                    <a href="SanPham.aspx?url=Adidas">Adidas</a>
+                                </li>
+                                <li>
+                                    <a href="SanPham.aspx?url=Nike">Nike</a>
+                                </li>
+                                <li>
+                                    <a href="SanPham.aspx?url=Jordan">Jordan</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="LienHe.aspx">Liên Hệ</a>
+                        </li>
+
+                        <li>
+                            <a href="BangSizeGiay.aspx">Bảng Size Giày</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1"></asp:ContentPlaceHolder>
+                </div>
+                <div>
+                    <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder2"></asp:ContentPlaceHolder>
+                </div>
+
+                <div class="footer">
+                    <div class="thongtinlienhe">
+                        <br />
+                        <h3>Thông Tin Liên Hệ</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/quangphuoccc" target="_blank">Lê Quang Phước:Leader & Coder</a> </li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.facebook.com/minhquan312" target="_blank">Phạm Hữu Minh Quân : Coder</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.facebook.com/AnhDaoCiara" target="_blank">Nguyễn Anh Đào : Designer</a></li>
+                        </ul>                   
+                    </div>
+                    <div class="diachi">
+                        <br />
+                        <h4>Địa Chỉ Shop</h4>
+                        <p>
+                            Tầng 69, Tòa nhà Tropical Land,<br />
+                             Quận 9, TP.Hồ Chí Minh.  
+                        </p>
+
+
+                    </div>
+                    <div class="lienket">
+                        <br />
+                        <h3>Liên Kết Sản Phẩm</h3>
+                        <div class="lienket1">
+                            <ul>
+                                <li><a href="SanPham.aspx?url=Adidas">
+                                    <img src="Images/adidas1.jpg" style="height: 50px; width: 80px;" />
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="lienket2">
+                            <ul>
+                                <li><a href="SanPham.aspx?url=Nike">
+                                    <img src="Images/nike.png" style="height: 50px; width: 80px;" />
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lienket3">
+                            <ul>
+                                <li><a href="SanPham.aspx?url=Jordan">
+                                    <img src="Images/jodan.png" style="height: 50px; width: 80px;" />
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

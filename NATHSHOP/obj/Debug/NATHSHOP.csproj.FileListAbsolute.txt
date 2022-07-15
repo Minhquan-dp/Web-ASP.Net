@@ -1,0 +1,19 @@
+C:\Users\Dell\Documents\Visual Studio 2013\Projects\Webdemo10\Webdemo10\NATHSHOP\bin\NATHSHOP.dll.config
+C:\Users\Dell\Documents\Visual Studio 2013\Projects\Webdemo10\Webdemo10\NATHSHOP\bin\NATHSHOP.dll
+C:\Users\Dell\Documents\Visual Studio 2013\Projects\Webdemo10\Webdemo10\NATHSHOP\bin\NATHSHOP.pdb
+C:\Users\Dell\Documents\Visual Studio 2013\Projects\Webdemo10\Webdemo10\NATHSHOP\obj\Debug\NATHSHOP.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Documents\Visual Studio 2013\Projects\Webdemo10\Webdemo10\NATHSHOP\obj\Debug\NATHSHOP.dll
+C:\Users\Dell\Documents\Visual Studio 2013\Projects\Webdemo10\Webdemo10\NATHSHOP\obj\Debug\NATHSHOP.pdb
+D:\Downloads\Web\NATHSHOP\bin\NATHSHOP.dll.config
+D:\Downloads\Web\NATHSHOP\bin\NATHSHOP.dll
+D:\Downloads\Web\NATHSHOP\bin\NATHSHOP.pdb
+D:\Downloads\Web\NATHSHOP\obj\Debug\NATHSHOP.csprojResolveAssemblyReference.cache
+D:\Downloads\Web\NATHSHOP\obj\Debug\NATHSHOP.dll
+D:\Downloads\Web\NATHSHOP\obj\Debug\NATHSHOP.pdb
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\NATHSHOP\bin\NATHSHOP.dll.config
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\NATHSHOP\bin\NATHSHOP.dll
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\NATHSHOP\bin\NATHSHOP.pdb
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\NATHSHOP\obj\Debug\NATHSHOP.csproj.AssemblyReference.cache
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\NATHSHOP\obj\Debug\NATHSHOP.csproj.CoreCompileInputs.cache
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\NATHSHOP\obj\Debug\NATHSHOP.dll
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\NATHSHOP\obj\Debug\NATHSHOP.pdb

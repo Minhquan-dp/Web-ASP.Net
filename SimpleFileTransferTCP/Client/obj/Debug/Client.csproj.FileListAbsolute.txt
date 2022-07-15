@@ -1,0 +1,13 @@
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Client\bin\Debug\Client.exe.config
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Client\bin\Debug\Client.exe
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Client\bin\Debug\Client.pdb
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Client\obj\Debug\Client.exe
+c:\users\admin\documents\visual studio 2013\Projects\SimpleFileTransferTCP\Client\obj\Debug\Client.pdb
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Client\bin\Debug\Client.exe.config
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Client\bin\Debug\Client.exe
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Client\bin\Debug\Client.pdb
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Client\obj\Debug\Client.exe
+C:\Users\LAPTOP DUC NGHIA\OneDrive\Desktop\Web-ban-giay\SimpleFileTransferTCP\Client\obj\Debug\Client.pdb

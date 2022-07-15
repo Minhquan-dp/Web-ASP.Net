@@ -1,0 +1,62 @@
+﻿#Slider {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 30px;
+    /*width: 750px;*/
+    width: 950px;
+    background: white;
+    top: 5px;
+    left: 3px;
+    z-index: -1;
+}
+
+#prev-slide, #next-slide {
+    position: absolute;
+    top: 132px;
+    width: 18px;
+    height: 31px;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+
+#prev-slide {
+    left: 5px;
+    background: url(images/prev-arrow.png) no-repeat 0 0;
+}
+
+#next-slide {
+    right: 5px;
+    background: url(images/next-arrow.png) no-repeat 0 0;
+}
+
+#wrap-slider {
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+
+#slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slide-box {
+    width: 950px;
+    height: 550px;
+    display: block;
+    float: left;
+}
+.danhmuc{
+    height:auto;
+    width:1200px;
+}
+.danhmuc .adidas{
+    float:left;
+}
+    .danhmuc .nike {
+        float: left;
+    }
+    .danhmuc .jordan{
+        float:left;
+    }

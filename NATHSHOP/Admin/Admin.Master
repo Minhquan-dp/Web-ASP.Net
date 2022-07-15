@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="NATHSHOP.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Shop Giay Sneaker</title>
+    <link href="Styles/style-admin.css" rel="stylesheet" />
+    <link href="Styles/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div id="main_container">
+
+            <div class="header">
+
+                <div class="logo"> <b style=" font-family:Algerian; font-size:xx-large; font-style:italic; color:#fccccc">NATH STORE</b>
+                    &nbsp;</div>
+                <div class="right_header">
+                    <asp:Label ID="lblTenDangNhap" runat="server"></asp:Label>, <a href="Client/Default.aspx">Về trang chủ</a> | <a href="ThoatDangNhap.aspx" class="logout">Thoát</a>
+                </div>
+            </div>
+
+            <div class="main_content">
+
+                <div class="menu">
+                    <ul>
+                        <li><a class="current" href="default.aspx">Trang Admin</a></li>
+                        <li><a href="QuanLyKhachHang.aspx">Quản lý Customer </a>
+
+                        </li>
+                        <li><a href="QuanLySanPham.aspx">Quản Lý Product</a>
+
+                        </li>
+                        <li><a href="QuanLyHoaDon.aspx">Quản Lý Invoice</a>
+
+                        </li>
+
+                        <li><a href="QuanLyUser.aspx">Quản lý User</a></li>
+                        <li><a href="ThongKe.aspx">Thống Kê</a></li>
+
+                    </ul>
+                </div>
+                <div class="center_content">
+                    <br /><br />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+                
+                <!--end of center content -->
+
+
+
+
+                <div class="clear"></div>
+            </div>
+            <!--end of main content-->
+
+
+            <div class="footer">
+
+          
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>
